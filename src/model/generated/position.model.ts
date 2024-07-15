@@ -42,4 +42,7 @@ export class Position {
 
     @Column_("varchar", {length: 6, nullable: true})
     status!: PositionStatus | undefined | null
+
+    @StringColumn_({nullable: false})
+    eventType!: string
 }
